@@ -10,5 +10,5 @@ const store = configureStore({
   },
   devTools: true,
 });
-
+console.log("Initial State", store.getState());
 export default store;
