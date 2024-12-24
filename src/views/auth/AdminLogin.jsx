@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { FaGoogle } from "react-icons/fa";
-import { FaFacebookF } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { admin_login } from "../../store/Reducers/AuthReducer";
+import { PropagateLoader } from "react-spinners";
 
 const AdminLogin = () => {
   const dispatch = useDispatch();
+  const { loader } = useSelector((state) => state.auth);
 
   const [state, setState] = useState({
     email: "",
@@ -22,6 +21,14 @@ const AdminLogin = () => {
     e.preventDefault();
     dispatch(admin_login(state));
     // console.log(state);
+  };
+
+  const overrideStyle = {
+    display: "flex",
+    margin: "0 auto",
+    height: "20px",
+    justifyContent: "center",
+    alignItem: "center",
   };
   return (
     <div className="min-w-screen min-h-screen bg-[#cdcae9] flex justify-center items-center">
@@ -55,17 +62,16 @@ const AdminLogin = () => {
               />
             </div>
 
-            <button className="bg-slate-800 w-full hover:shadow-lg hover:shadow-blue-300 text-white px-7 py-2 rounded-md mb-3">
-              Login
+            <button
+              disabled={loader ? true : false}
+              className="bg-slate-800 w-full hover:shadow-lg hover:shadow-blue-300 text-white px-7 py-2 rounded-md mb-3"
+            >
+              {loader ? (
+                <PropagateLoader color="#fff" cssOverride={overrideStyle} />
+              ) : (
+                "Login"
+              )}
             </button>
-            <div className="flex items-center mb-3 gap-3 justify-center">
-              <p>
-                Don't have an account?
-                <Link className="font-bold" to="/register">
-                  Sign Up
-                </Link>
-              </p>
-            </div>
           </form>
         </div>
       </div>
