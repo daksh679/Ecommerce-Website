@@ -1,12 +1,16 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { admin_login } from "../../store/Reducers/AuthReducer";
+import { admin_login, clearMessage } from "../../store/Reducers/AuthReducer";
 import { PropagateLoader } from "react-spinners";
+import toast from "react-hot-toast";
 
 const AdminLogin = () => {
+  const navigate = useNavigate();
   const dispatch = useDispatch();
-  const { loader } = useSelector((state) => state.auth);
+  const { loader, errorMessage, successMessage } = useSelector(
+    (state) => state.auth
+  );
 
   const [state, setState] = useState({
     email: "",
@@ -30,6 +34,18 @@ const AdminLogin = () => {
     justifyContent: "center",
     alignItem: "center",
   };
+
+  useEffect(() => {
+    if (errorMessage) {
+      toast.error(errorMessage);
+      dispatch(clearMessage());
+    }
+    if (successMessage) {
+      toast.success(successMessage);
+      dispatch(clearMessage());
+      navigate("/");
+    }
+  }, [errorMessage, successMessage]);
   return (
     <div className="min-w-screen min-h-screen bg-[#cdcae9] flex justify-center items-center">
       <div className="w-[350px] text-[#ffffff] p-2">

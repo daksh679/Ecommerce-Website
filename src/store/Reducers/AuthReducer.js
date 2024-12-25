@@ -3,15 +3,18 @@ import api from "../../api/api";
 
 export const admin_login = createAsyncThunk(
   "auth/admin_login",
-  async (info) => {
+  async (info, { rejectWithValue, fulfillWithValue }) => {
     console.log(info);
     try {
       const { data } = await api.post("/admin-login", info, {
         withCredentials: true,
       });
-      console.log(data);
+      localStorage.setItem("accessToken", data.token);
+      // console.log(data);
+      return fulfillWithValue(data);
     } catch (error) {
-      console.log(error.response.data);
+      // console.log(error.response.data);
+      return rejectWithValue(error.response.data);
     }
   }
 );
@@ -24,7 +27,11 @@ export const authReducer = createSlice({
     loader: false,
     userInfo: "",
   },
-  reducers: {},
+  reducers: {
+    clearMessage: (state, _) => {
+      state.errorMessage = "";
+    },
+  },
   extraReducers: (builder) => {
     builder
       .addCase(admin_login.pending, (state, { payload }) => {
@@ -32,7 +39,14 @@ export const authReducer = createSlice({
       })
       .addCase(admin_login.rejected, (state, { payload }) => {
         state.loader = false;
+        state.errorMessage = payload.error;
+      })
+      .addCase(admin_login.fulfilled, (state, { payload }) => {
+        state.loader = false;
+        state.successMessage = payload.message;
       });
   },
 });
+
+export const { clearMessage } = authReducer.actions;
 export default authReducer.reducer;
