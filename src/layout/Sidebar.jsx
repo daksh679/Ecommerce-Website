@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { getNavs } from "./../navigation/index";
 import { BiLogOut } from "react-icons/bi";
 
-const Sidebar = ({}) => {
+const Sidebar = ({ showSidebar, setShowSidebar }) => {
   const { pathname } = useLocation();
   const [allNav, setAllNav] = useState([]);
 
