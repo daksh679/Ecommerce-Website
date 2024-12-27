@@ -25,16 +25,14 @@ const Header = ({ showSidebar, setShowSidebar }) => {
           <div className="flex justify-center items-center">
             <div className="flex justify-center items-center gap-3">
               <div className="flex justify-center items-center flex-col text-end">
-                <h2 className="text-md font-bold">Daksh Auja</h2>
+                <h2 className="text-md font-bold">Daksh Ahuja</h2>
                 <span className="text-[14px] w-full font-normal">Admin</span>
-                <div>
-                  <img
-                    className="h-[45px] w-[45px] rounded-full overflow-hidden"
-                    src="http://localhost:3000/images/admin.jpg"
-                    alt=""
-                  />
-                </div>
               </div>
+              <img
+                className="h-[45px] w-[45px] rounded-full overflow-hidden"
+                src="http://localhost:3000/images/admin.jpg"
+                alt=""
+              />
             </div>
           </div>
         </div>
