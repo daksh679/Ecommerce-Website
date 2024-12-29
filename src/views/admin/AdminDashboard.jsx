@@ -2,7 +2,7 @@ import React from "react";
 import { AiFillProduct } from "react-icons/ai";
 import { FaCartArrowDown, FaUser, FaUsers } from "react-icons/fa";
 import { MdCurrencyRupee } from "react-icons/md";
-import Chart from "apexcharts";
+import Chart from "react-apexcharts";
 import { data } from "react-router-dom";
 
 const AdminDashboard = () => {
@@ -60,6 +60,37 @@ const AdminDashboard = () => {
       legend: {
         position: "top",
       },
+      Responseive: [
+        {
+          breakpoint: 565,
+          yaxis: {
+            categories: [
+              "Jan",
+              "Feb",
+              "Mar",
+              "Apr",
+              "May",
+              "Jun",
+              "Jul",
+              "Aug",
+              "Sep",
+              "Oct",
+              "Nov",
+              "Dec",
+            ],
+          },
+          options: {
+            plotOptions: {
+              bar: {
+                horizontal: true,
+              },
+            },
+            chart: {
+              height: "550px",
+            },
+          },
+        },
+      ],
     },
   };
   return (
@@ -115,6 +146,11 @@ const AdminDashboard = () => {
                 type="bar"
                 height={350}
               />
+            </div>
+          </div>
+          <div className="w-full lg:w-5/12 lg:pl-4 mt-6 lg:mt-0">
+            <div className="w-full bg-[#f5f5f5] p-4 rounded-md">
+              <div className="flex justify-between it"></div>
             </div>
           </div>
         </div>
