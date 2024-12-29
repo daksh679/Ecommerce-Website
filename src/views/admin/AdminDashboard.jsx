@@ -3,7 +3,7 @@ import { AiFillProduct } from "react-icons/ai";
 import { FaCartArrowDown, FaUser, FaUsers } from "react-icons/fa";
 import { MdCurrencyRupee } from "react-icons/md";
 import Chart from "react-apexcharts";
-import { data } from "react-router-dom";
+import { data, Link } from "react-router-dom";
 
 const AdminDashboard = () => {
   const state = {
@@ -150,7 +150,41 @@ const AdminDashboard = () => {
           </div>
           <div className="w-full lg:w-5/12 lg:pl-4 mt-6 lg:mt-0">
             <div className="w-full bg-[#f5f5f5] p-4 rounded-md">
-              <div className="flex justify-between it"></div>
+              <div className="flex justify-between items-center">
+                <h2 className="font-semibold text-lg pb-3">
+                  Recent Seller Chats
+                </h2>
+                <Link
+                  to="/admin/sellers"
+                  className="font-semibold text-sm text-[#181ee8]"
+                >
+                  View All
+                </Link>
+              </div>
+              <div className="flex flex-col gap-2 pt-6">
+                <ol className="relative border-1 border-slate-600 ml-4">
+                  <li className="mb-3 ml-6">
+                    <div className="flex absolute -left-5 shadow-lg justify-center items-center w-10 h-10 p-[6px] bg-[#4c7fe2] rounded-full z-10">
+                      <img
+                        className="h-full w-full rounded-full "
+                        src="http://localhost:3000/images/admin.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div className="p-3 bg-slate-800 rounded-lg border border-slate-600 shadow-sm">
+                      <div className="flex justify-between items-center mb-2 text-[#f5f5f5]">
+                        <Link className="text-md font-normal">Admin</Link>
+                        <time className="mb-1 text-sm font-normal sm:order-last sm:mb-0">
+                          2 days ago
+                        </time>
+                      </div>
+                      <div className="p-2 text-xs font-normal bg-slate-700 rounded-lg border border-slate-800 text-[#f5f5f5]">
+                        How are you doing today?
+                      </div>
+                    </div>
+                  </li>
+                </ol>
+              </div>
             </div>
           </div>
         </div>
