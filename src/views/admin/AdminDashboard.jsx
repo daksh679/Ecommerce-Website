@@ -188,6 +188,106 @@ const AdminDashboard = () => {
             </div>
           </div>
         </div>
+
+        <div className="w-full p-4 bg-[#f5f5f5] rounded-md mt-6">
+          <div className="flex justify-between items-center">
+            <h2 className="font-semibold text-lg">Recent Orders</h2>
+            <Link className="font-semibold text-sm text-[#181ee8]">
+              View All
+            </Link>
+          </div>
+
+          <div className="relative overflow-x-auto rounded-sm">
+            <table className="w-full text-sm text-left whitespace-nowrap">
+              <thead className="uppercase border-b border-slate-700 bg-slate-800 text-[#f5f5f5]">
+                <tr>
+                  <th scope="col" className="px-3 py-3">
+                    Order Id
+                  </th>
+                  <th scope="col" className="px-3 py-3">
+                    Price
+                  </th>
+                  <th scope="col" className="px-3 py-3">
+                    Payment Status
+                  </th>
+                  <th scope="col" className="px-3 py-3">
+                    Order Status
+                  </th>
+                  <th scope="col" className="px-3 py-3">
+                    Active
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td
+                    scope="row"
+                    className="py-4 px-6 font-medium whitespace-nowrap"
+                  >
+                    34445
+                  </td>
+                  <td
+                    scope="row"
+                    className="py-4 px-6 font-medium whitespace-nowrap"
+                  >
+                    $100
+                  </td>
+                  <td
+                    scope="row"
+                    className="py-4 px-6 font-medium whitespace-nowrap"
+                  >
+                    Paid
+                  </td>
+                  <td
+                    scope="row"
+                    className="py-4 px-6 font-medium whitespace-nowrap"
+                  >
+                    Delivered
+                  </td>
+                  <td
+                    scope="row"
+                    className="py-4 px-6 font-medium whitespace-nowrap"
+                  >
+                    <span className="text-green-500">Active</span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td
+                    scope="row"
+                    className="py-4 px-6 font-medium whitespace-nowrap"
+                  >
+                    34445
+                  </td>
+                  <td
+                    scope="row"
+                    className="py-4 px-6 font-medium whitespace-nowrap"
+                  >
+                    $100
+                  </td>
+                  <td
+                    scope="row"
+                    className="py-4 px-6 font-medium whitespace-nowrap"
+                  >
+                    Paid
+                  </td>
+                  <td
+                    scope="row"
+                    className="py-4 px-6 font-medium whitespace-nowrap"
+                  >
+                    Delivered
+                  </td>
+                  <td
+                    scope="row"
+                    className="py-4 px-6 font-medium whitespace-nowrap"
+                  >
+                    <span className="text-green-500">Active</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
     </div>
   );
