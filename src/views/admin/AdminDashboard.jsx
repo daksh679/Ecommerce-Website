@@ -197,6 +197,7 @@ const AdminDashboard = () => {
             </Link>
           </div>
 
+          {/* Order Transaction */}
           <div className="relative overflow-x-auto rounded-sm">
             <table className="w-full text-sm text-left whitespace-nowrap">
               <thead className="uppercase border-b border-slate-700 bg-slate-800 text-[#f5f5f5]">
