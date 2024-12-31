@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Pagination from "../Pagination";
 import { Link } from "react-router-dom";
 import { IoIosCloudDownload } from "react-icons/io";
+import { FaEye } from "react-icons/fa";
 
 const Sellers = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -69,7 +70,7 @@ const Sellers = () => {
                     scope="row"
                     className="py-4 px-6 font-medium whitespace-nowrap"
                   >
-                    34445
+                    1
                   </td>
                   <td
                     scope="row"
@@ -81,33 +82,42 @@ const Sellers = () => {
                     scope="row"
                     className="py-4 px-6 font-medium whitespace-nowrap"
                   >
-                    Paid
+                    Daksh Ahuja
                   </td>
                   <td
                     scope="row"
                     className="py-4 px-6 font-medium whitespace-nowrap"
                   >
-                    Delivered
+                    Easy
                   </td>
                   <td
                     scope="row"
                     className="py-4 px-6 font-medium whitespace-nowrap"
                   >
-                    <span className="text-green-500">Active</span>
+                    Pending
+                  </td>
+                  <td
+                    scope="row"
+                    className="py-4 px-6 font-medium whitespace-nowrap"
+                  >
+                    adaksh679@gmail.com
                   </td>
                   <td className="py-4 px-6 font-medium whitespace-nowrap">
-                    <Link onClick={() => setShow(!show)}>
-                      <IoIosCloudDownload />
-                    </Link>
+                    Haryana
+                  </td>
+                  <td className="py-4 px-6 font-medium whitespace-nowrap">
+                    Faridabad
+                  </td>
+                  <td className="py-4 px-6 font-medium whitespace-nowrap">
+                    <FaEye />
                   </td>
                 </tr>
-
                 <tr>
                   <td
                     scope="row"
                     className="py-4 px-6 font-medium whitespace-nowrap"
                   >
-                    34448
+                    1
                   </td>
                   <td
                     scope="row"
@@ -119,56 +129,177 @@ const Sellers = () => {
                     scope="row"
                     className="py-4 px-6 font-medium whitespace-nowrap"
                   >
-                    Paid
+                    Daksh Ahuja
                   </td>
                   <td
                     scope="row"
                     className="py-4 px-6 font-medium whitespace-nowrap"
                   >
-                    Delivered
+                    Easy
                   </td>
                   <td
                     scope="row"
                     className="py-4 px-6 font-medium whitespace-nowrap"
                   >
-                    <span className="text-green-500">Active</span>
+                    Pending
+                  </td>
+                  <td
+                    scope="row"
+                    className="py-4 px-6 font-medium whitespace-nowrap"
+                  >
+                    adaksh679@gmail.com
+                  </td>
+                  <td className="py-4 px-6 font-medium whitespace-nowrap">
+                    Haryana
+                  </td>
+                  <td className="py-4 px-6 font-medium whitespace-nowrap">
+                    Faridabad
+                  </td>
+                  <td className="py-4 px-6 font-medium whitespace-nowrap">
+                    <FaEye />
                   </td>
                 </tr>
-
-                {show ? (
-                  <tr className="w-full bg-[#ecebff]">
-                    <td
-                      scope="row"
-                      className="py-4 px-6 font-medium whitespace-nowrap"
-                    >
-                      34445
-                    </td>
-                    <td
-                      scope="row"
-                      className="py-4 px-6 font-medium whitespace-nowrap"
-                    >
-                      $100
-                    </td>
-                    <td
-                      scope="row"
-                      className="py-4 px-6 font-medium whitespace-nowrap"
-                    >
-                      Paid
-                    </td>
-                    <td
-                      scope="row"
-                      className="py-4 px-6 font-medium whitespace-nowrap"
-                    >
-                      Delivered
-                    </td>
-                    <td
-                      scope="row"
-                      className="py-4 px-6 font-medium whitespace-nowrap"
-                    >
-                      <span className="text-green-500">Active</span>
-                    </td>
-                  </tr>
-                ) : null}
+                <tr>
+                  <td
+                    scope="row"
+                    className="py-4 px-6 font-medium whitespace-nowrap"
+                  >
+                    1
+                  </td>
+                  <td
+                    scope="row"
+                    className="py-4 px-6 font-medium whitespace-nowrap"
+                  >
+                    $100
+                  </td>
+                  <td
+                    scope="row"
+                    className="py-4 px-6 font-medium whitespace-nowrap"
+                  >
+                    Daksh Ahuja
+                  </td>
+                  <td
+                    scope="row"
+                    className="py-4 px-6 font-medium whitespace-nowrap"
+                  >
+                    Easy
+                  </td>
+                  <td
+                    scope="row"
+                    className="py-4 px-6 font-medium whitespace-nowrap"
+                  >
+                    Pending
+                  </td>
+                  <td
+                    scope="row"
+                    className="py-4 px-6 font-medium whitespace-nowrap"
+                  >
+                    adaksh679@gmail.com
+                  </td>
+                  <td className="py-4 px-6 font-medium whitespace-nowrap">
+                    Haryana
+                  </td>
+                  <td className="py-4 px-6 font-medium whitespace-nowrap">
+                    Faridabad
+                  </td>
+                  <td className="py-4 px-6 font-medium whitespace-nowrap">
+                    <FaEye />
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    scope="row"
+                    className="py-4 px-6 font-medium whitespace-nowrap"
+                  >
+                    1
+                  </td>
+                  <td
+                    scope="row"
+                    className="py-4 px-6 font-medium whitespace-nowrap"
+                  >
+                    $100
+                  </td>
+                  <td
+                    scope="row"
+                    className="py-4 px-6 font-medium whitespace-nowrap"
+                  >
+                    Daksh Ahuja
+                  </td>
+                  <td
+                    scope="row"
+                    className="py-4 px-6 font-medium whitespace-nowrap"
+                  >
+                    Easy
+                  </td>
+                  <td
+                    scope="row"
+                    className="py-4 px-6 font-medium whitespace-nowrap"
+                  >
+                    Pending
+                  </td>
+                  <td
+                    scope="row"
+                    className="py-4 px-6 font-medium whitespace-nowrap"
+                  >
+                    adaksh679@gmail.com
+                  </td>
+                  <td className="py-4 px-6 font-medium whitespace-nowrap">
+                    Haryana
+                  </td>
+                  <td className="py-4 px-6 font-medium whitespace-nowrap">
+                    Faridabad
+                  </td>
+                  <td className="py-4 px-6 font-medium whitespace-nowrap">
+                    <FaEye />
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    scope="row"
+                    className="py-4 px-6 font-medium whitespace-nowrap"
+                  >
+                    1
+                  </td>
+                  <td
+                    scope="row"
+                    className="py-4 px-6 font-medium whitespace-nowrap"
+                  >
+                    $100
+                  </td>
+                  <td
+                    scope="row"
+                    className="py-4 px-6 font-medium whitespace-nowrap"
+                  >
+                    Daksh Ahuja
+                  </td>
+                  <td
+                    scope="row"
+                    className="py-4 px-6 font-medium whitespace-nowrap"
+                  >
+                    Easy
+                  </td>
+                  <td
+                    scope="row"
+                    className="py-4 px-6 font-medium whitespace-nowrap"
+                  >
+                    Pending
+                  </td>
+                  <td
+                    scope="row"
+                    className="py-4 px-6 font-medium whitespace-nowrap"
+                  >
+                    adaksh679@gmail.com
+                  </td>
+                  <td className="py-4 px-6 font-medium whitespace-nowrap">
+                    Haryana
+                  </td>
+                  <td className="py-4 px-6 font-medium whitespace-nowrap">
+                    Faridabad
+                  </td>
+                  <td className="py-4 px-6 font-medium whitespace-nowrap">
+                    <FaEye />
+                  </td>
+                </tr>
               </tbody>
             </table>
           </div>
