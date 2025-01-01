@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Pagination from "../Pagination";
 import { FaEye } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const SellersRequest = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -212,7 +213,9 @@ const SellersRequest = () => {
                     Deactive
                   </td>
                   <td className="py-4 px-6 font-medium whitespace-nowrap">
-                    <FaEye />
+                    <Link to={"/admin/dashboard/seller/details/1"}>
+                      <FaEye />
+                    </Link>
                   </td>
                 </tr>
               </tbody>
