@@ -12,6 +12,8 @@ const Sellers = () => {
   return (
     <div className=" left-0 w-full py-5 px-2 lg:px-7 z-40">
       <div className="lg:ml-[260px] lg:w-[calc(100%-260px)]">
+        <h2 className="font-bold text-lg">Active Sellers</h2>
+
         <div className="w-full p-4 bg-[#f5f5f5] rounded-md mt-2">
           <div className="flex justify-between items-center mb-2">
             <select
