@@ -152,13 +152,15 @@ const Category = () => {
                   </tbody>
                 </table>
               </div>
-              <Pagination
-                pageNumber={currentPage}
-                setPageNumer={setCurrentPage}
-                totalItems={50}
-                perPage={perPage}
-                showItem={3}
-              />
+              <div className="w-full flex justify-end mt-4 bottom-4 right-4">
+                <Pagination
+                  pageNumber={currentPage}
+                  setPageNumer={setCurrentPage}
+                  totalItems={50}
+                  perPage={perPage}
+                  showItem={3}
+                />
+              </div>
             </div>
           </div>
           <div className="w-full lg:w-5/12 lg:pl-4 mt-6 lg:mt-0">
