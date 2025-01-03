@@ -84,7 +84,7 @@ const Orders = () => {
                     scope="row"
                     className="py-4 px-6 font-medium whitespace-nowrap"
                   >
-                    <span className="text-green-500">Active</span>
+                    <Link to="/admin/dashboard/order/details/1">View</Link>
                   </td>
                   <td className="py-4 px-6 font-medium whitespace-nowrap">
                     <Link onClick={() => setShow(!show)}>
