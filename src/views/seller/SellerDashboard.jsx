@@ -1,11 +1,11 @@
 import React from "react";
 import { AiFillProduct } from "react-icons/ai";
-import { FaCartArrowDown, FaUser, FaUsers } from "react-icons/fa";
+import { FaCartArrowDown, FaShoppingCart } from "react-icons/fa";
 import { MdCurrencyRupee } from "react-icons/md";
 import Chart from "react-apexcharts";
-import { data, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-const AdminDashboard = () => {
+const SellerDashboard = () => {
   const state = {
     series: [
       {
@@ -17,7 +17,7 @@ const AdminDashboard = () => {
         data: [76, 85, 101, 98, 87, 105, 91, 114, 94],
       },
       {
-        name: "Sellers",
+        name: "Sales",
         data: [35, 41, 36, 26, 45, 48, 52, 53, 41],
       },
     ],
@@ -119,17 +119,17 @@ const AdminDashboard = () => {
           <div className="flex justify-between items-center p-5 bg-[#e9feea] rounded-md gap-3">
             <div className="flex flex-col justify-start items-start text-[#5c5a5a]">
               <h2 className="text-3xl font-bold"> 10</h2>
-              <span className="text-md font-medium">Sellers</span>
+              <span className="text-md font-medium">Orders</span>
             </div>
             <div className="w-[40px] h-[47px] rounded-full bg-[#038000] flex justify-center items-center text-xl">
-              <FaUsers className="text-[#fae8e8] shadow-lg" />
+              <FaShoppingCart className="text-[#fae8e8] shadow-lg" />
             </div>
           </div>
 
           <div className="flex justify-between items-center p-5 bg-[#ecebff] rounded-md gap-3">
             <div className="flex flex-col justify-start items-start text-[#5c5a5a]">
-              <h2 className="text-3xl font-bold"> 34</h2>
-              <span className="text-md font-medium">Orders</span>
+              <h2 className="text-3xl font-bold"> 3</h2>
+              <span className="text-md font-medium">Pending Orders</span>
             </div>
             <div className="w-[40px] h-[47px] rounded-full bg-[#0200f8] flex justify-center items-center text-xl">
               <FaCartArrowDown className="text-[#fae8e8] shadow-lg" />
@@ -152,7 +152,7 @@ const AdminDashboard = () => {
             <div className="w-full bg-[#f5f5f5] p-4 rounded-md">
               <div className="flex justify-between items-center">
                 <h2 className="font-semibold text-lg pb-3">
-                  Recent Seller Chats
+                  Recent Customer Chats
                 </h2>
                 <Link
                   to="/admin/sellers"
@@ -190,7 +190,7 @@ const AdminDashboard = () => {
         </div>
 
         <div className="w-full p-4 bg-[#f5f5f5] rounded-md mt-6">
-          <div className="flex justify-between items-center mb-2">
+          <div className="flex justify-between items-center mb-3">
             <h2 className="font-semibold text-lg">Recent Orders</h2>
             <Link className="font-semibold text-sm text-[#181ee8]">
               View All
@@ -294,4 +294,4 @@ const AdminDashboard = () => {
   );
 };
 
-export default AdminDashboard;
+export default SellerDashboard;

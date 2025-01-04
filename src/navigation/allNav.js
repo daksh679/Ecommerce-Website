@@ -1,9 +1,15 @@
-import { AiOutlineDashboard } from "react-icons/ai";
-import { BiLogOut } from "react-icons/bi";
+import { AiFillProduct, AiOutlineDashboard } from "react-icons/ai";
+import { BiLogOut, BiSupport } from "react-icons/bi";
 import { FaShoppingCart } from "react-icons/fa";
 import { BiCategory } from "react-icons/bi";
 import { IoIosPeople } from "react-icons/io";
-import { MdPayment } from "react-icons/md";
+import {
+  MdAssignmentAdd,
+  MdDiscount,
+  MdOutlineMarkUnreadChatAlt,
+  MdOutlinePayments,
+  MdPayment,
+} from "react-icons/md";
 import { MdPeopleOutline } from "react-icons/md";
 import { FaCodePullRequest } from "react-icons/fa6";
 import { SiLivechat } from "react-icons/si";
@@ -64,5 +70,61 @@ export const allNav = [
     role: "admin",
     icon: <SiLivechat />,
     path: "/admin/dashboard/chat-sellers",
+  },
+  {
+    id: 9,
+    title: "Dashboard",
+    role: "seller",
+    icon: <AiOutlineDashboard />,
+    path: "/seller/dashboard",
+  },
+  {
+    id: 10,
+    title: "Add Product",
+    role: "seller",
+    icon: <MdAssignmentAdd />,
+    path: "/seller/dashboard/add-products",
+  },
+  {
+    id: 11,
+    title: "All Products",
+    role: "seller",
+    icon: <AiFillProduct />,
+    path: "/seller/dashboard/all-products",
+  },
+  {
+    id: 12,
+    title: "Discounted Products",
+    role: "seller",
+    icon: <MdDiscount />,
+    path: "/seller/dashboard/discouted-products",
+  },
+  {
+    id: 13,
+    title: "Orders",
+    role: "seller",
+    icon: <FaShoppingCart />,
+    path: "/seller/dashboard/orders",
+  },
+  {
+    id: 14,
+    title: "Payments",
+    role: "seller",
+    icon: <MdOutlinePayments />,
+    path: "/seller/dashboard/payments",
+  },
+  {
+    id: 15,
+    title: "Chat Customer",
+    role: "seller",
+    icon: <MdOutlineMarkUnreadChatAlt />,
+    path: "/seller/dashboard/chat-customer",
+  },
+  {
+    id: 16,
+    title: "Chat Support",
+    role: "seller",
+    icon: <BiSupport />,
+    path: "/seller/dashboard/chat-support",
   },
 ];
