@@ -83,7 +83,7 @@ export const allNav = [
     title: "Add Product",
     role: "seller",
     icon: <MdAssignmentAdd />,
-    path: "/seller/dashboard/add-products",
+    path: "/seller/dashboard/add-product",
   },
   {
     id: 11,
