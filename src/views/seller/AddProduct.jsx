@@ -43,7 +43,7 @@ const AddProduct = () => {
   });
   const [catShow, setCatShow] = useState(false);
   const [category, setCategory] = useState("");
-  const [allCatergories, setAllCatergories] = useState([]);
+  const [allCatergories, setAllCatergories] = useState(categories);
   const [searchValue, setSearchValue] = useState("");
 
   const handleInputChange = (e) => {
@@ -51,7 +51,16 @@ const AddProduct = () => {
   };
 
   const categorySearch = (e) => {
-    const value = e.target.value; // search value
+    const value = e.target.value;
+    setSearchValue(value.name); // search value
+    if (value) {
+      const searchResult = allCatergories.filter((cat) =>
+        cat.name.toLowerCase().indexOf(value.toLowerCase() > -1)
+      );
+      setAllCatergories(searchResult);
+    } else {
+      setAllCatergories(categories);
+    }
   };
   return (
     <div className=" left-0 w-full py-5 px-2 lg:px-7 z-40">
@@ -94,6 +103,7 @@ const AddProduct = () => {
                 >
                   <div className="w-full px-4 py-2 fixed">
                     <input
+                      value={searchValue}
                       onChange={categorySearch}
                       className="px-2 py-1 focus:border-indigo-500 border border-gray-700 rounded-md w-full outline-none bg-transparent"
                       type="text"
@@ -107,11 +117,11 @@ const AddProduct = () => {
                         key={i}
                         onClick={() => {
                           setCatShow(false);
-                          setCategory(cat);
+                          setCategory(cat.name);
                           setSearchValue("");
                           setAllCatergories(categories);
                         }}
-                        className="px-4 py-2 hover:bg-slate-700 cursor-pointer"
+                        className="px-4 py-2 hover:bg-slate-700 cursor-pointer w-full"
                       >
                         {cat.name}
                       </span>
