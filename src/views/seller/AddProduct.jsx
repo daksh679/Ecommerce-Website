@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { IoMdImages } from "react-icons/io";
+import { IoImageSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
 const AddProduct = () => {
@@ -45,6 +47,8 @@ const AddProduct = () => {
   const [category, setCategory] = useState("");
   const [allCatergories, setAllCatergories] = useState(categories);
   const [searchValue, setSearchValue] = useState("");
+  const [images, setImages] = useState([]);
+  const [showImage, setShowImage] = useState([]);
 
   const handleInputChange = (e) => {
     setProduct({ ...product, [e.target.name]: e.target.value });
@@ -52,16 +56,45 @@ const AddProduct = () => {
 
   const categorySearch = (e) => {
     const value = e.target.value;
-    setSearchValue(value.name); // search value
+    setSearchValue(value); // search value
     if (value) {
-      const searchResult = allCatergories.filter((cat) =>
-        cat.name.toLowerCase().indexOf(value.toLowerCase() > -1)
+      let searchResult = allCatergories.filter(
+        (cat) => cat.name.toLowerCase().indexOf(value.toLowerCase()) > -1
       );
+      console.log(searchResult);
       setAllCatergories(searchResult);
     } else {
       setAllCatergories(categories);
     }
   };
+
+  const handleImageInput = (e) => {
+    const files = e.target.files;
+    const length = files.length;
+    console.log(files);
+    console.log(length);
+    if (length > 0) {
+      setImages([...images, ...files]);
+      let imageURL = [];
+      for (let i = 0; i < length; i++) {
+        imageURL.push({ url: URL.createObjectURL(files[i]) });
+        setShowImage([...showImage, ...imageURL]);
+      }
+    }
+  };
+
+  const changeImage = (img, i) => {
+    if (img) {
+      const tempURL = showImage;
+      const tempImages = images;
+      tempURL[i] = { url: URL.createObjectURL(img) };
+      tempImages[i] = img;
+
+      setImages([...tempImages]);
+      setShowImage([...tempURL]);
+    }
+  };
+
   return (
     <div className=" left-0 w-full py-5 px-2 lg:px-7 z-40">
       <div className="lg:ml-[260px] lg:w-[calc(100%-260px)]">
@@ -111,7 +144,7 @@ const AddProduct = () => {
                     />
                   </div>
                   <div className="pt-14"></div>
-                  <div className="flex justify-start items-start flex-col h-[200px] overflow-x-scroll">
+                  <div className="flex justify-start items-start flex-col h-[200px] overflow-y-scroll overflow-x-scroll">
                     {allCatergories.map((cat, i) => (
                       <span
                         key={i}
@@ -121,7 +154,9 @@ const AddProduct = () => {
                           setSearchValue("");
                           setAllCatergories(categories);
                         }}
-                        className="px-4 py-2 hover:bg-slate-700 cursor-pointer w-full"
+                        className={`px-4 py-2 text-white hover:bg-slate-700 cursor-pointer w-full ${
+                          category === cat.name && "bg-indigo-500"
+                        }`}
                       >
                         {cat.name}
                       </span>
@@ -130,8 +165,9 @@ const AddProduct = () => {
                 </div>
               </div>
 
-              <label htmlFor="">Price</label>
+              <label htmlFor="price">Price</label>
               <input
+                name="price"
                 onChange={handleInputChange}
                 value={product.price}
                 type="number"
@@ -140,7 +176,7 @@ const AddProduct = () => {
               />
             </div>
             <div>
-              <label htmlFor="">Brand Name</label>
+              <label htmlFor="brand">Brand Name</label>
               <input
                 onChange={handleInputChange}
                 value={product.brand}
@@ -159,7 +195,7 @@ const AddProduct = () => {
                 placeholder="Enter Product Stock"
                 name="stock"
               />
-              <label htmlFor="">Discount</label>
+              <label htmlFor="discount">Discount</label>
               <input
                 onChange={handleInputChange}
                 value={product.discount}
@@ -182,11 +218,38 @@ const AddProduct = () => {
               name="description"
             ></textarea>
           </div>
-          <div className="flex justify-start items-center">
-            <img src="" alt="" />
+          <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 sm:gap-4 md:gap-4 gap-3 w-full mb-4">
+            {showImage.map((u, i) => (
+              <div className="h-[180px] relative">
+                <label htmlFor={i}>
+                  <img
+                    src={u.url}
+                    alt=""
+                    className="w-full h-full rounded-md "
+                  />
+                </label>
+                <input
+                  onChange={(e) => changeImage(e.target.files[0], i)}
+                  type="file"
+                  className="hidden"
+                  name=""
+                  id={i}
+                />
+              </div>
+            ))}
+            <label
+              htmlFor="image"
+              className="flex justify-center items-center flex-col cursor-pointer border border-dashed border-slate-600 hover:border-red-500 w-full h-[180px]"
+            >
+              <IoMdImages />
+              <span>Select Image</span>
+            </label>
             <input
+              multiple
               type="file"
-              className="border border-gray-300 rounded-md p-2 mb-2"
+              id="image"
+              className="hidden"
+              onChange={handleImageInput}
             />
           </div>
           <div className="flex justify-start items-center">
