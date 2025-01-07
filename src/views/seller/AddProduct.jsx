@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { IoMdImages } from "react-icons/io";
-import { IoImageSharp } from "react-icons/io5";
+import { IoCloseCircle } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
 const AddProduct = () => {
@@ -93,6 +93,14 @@ const AddProduct = () => {
       setImages([...tempImages]);
       setShowImage([...tempURL]);
     }
+  };
+
+  const RemoveImage = (i) => {
+    const filterImages = images.filter((img, index) => index !== i);
+    const filterImagesURL = showImage.filter((img, index) => index !== i);
+
+    setImages([...filterImages]);
+    setShowImage([...filterImagesURL]);
   };
 
   return (
@@ -235,6 +243,12 @@ const AddProduct = () => {
                   name=""
                   id={i}
                 />
+                <span
+                  onClick={() => RemoveImage(i)}
+                  className="z-10 cursor-pointer bg-slate-700 hover:shadow-lg hover:shadow-slate-400/50 top-1 right-1 absolute rounded-full text-white"
+                >
+                  <IoCloseCircle />
+                </span>
               </div>
             ))}
             <label
