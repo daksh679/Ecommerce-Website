@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { IoIosCloudDownload } from "react-icons/io";
 import { FiEdit } from "react-icons/fi";
 import { RiDeleteBin6Line } from "react-icons/ri";
+import { FaEye } from "react-icons/fa";
 
 const Products = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -49,6 +50,21 @@ const Products = () => {
                         Name
                       </th>
                       <th scope="col" className="px-3 py-3">
+                        Category
+                      </th>
+                      <th scope="col" className="px-3 py-3">
+                        Brand
+                      </th>
+                      <th scope="col" className="px-3 py-3">
+                        Price
+                      </th>
+                      <th scope="col" className="px-3 py-3">
+                        Discount
+                      </th>
+                      <th scope="col" className="px-3 py-3">
+                        Stock
+                      </th>
+                      <th scope="col" className="px-3 py-3">
                         Action
                       </th>
                     </tr>
@@ -71,19 +87,49 @@ const Products = () => {
                         scope="row"
                         className="py-4 px-6 font-medium whitespace-nowrap"
                       >
+                        Men Woven Shirt
+                      </td>
+                      <td
+                        scope="row"
+                        className="py-4 px-6 font-medium whitespace-nowrap"
+                      >
                         Sports
                       </td>
                       <td
                         scope="row"
                         className="py-4 px-6 font-medium whitespace-nowrap"
                       >
-                        <div className="flex justify-start items-center">
-                          <FiEdit />
-                          <RiDeleteBin6Line />
+                        Numero Uno
+                      </td>
+                      <td
+                        scope="row"
+                        className="py-4 px-6 font-medium whitespace-nowrap"
+                      >
+                        $100
+                      </td>
+                      <td
+                        scope="row"
+                        className="py-4 px-6 font-medium whitespace-nowrap"
+                      >
+                        20%
+                      </td>
+                      <td
+                        scope="row"
+                        className="py-4 px-6 font-medium whitespace-nowrap"
+                      >
+                        30
+                      </td>
+                      <td
+                        scope="row"
+                        className="py-4 px-4 font-medium whitespace-nowrap"
+                      >
+                        <div className="flex justify-between items-center p-1">
+                          <FiEdit className="h-6 w-6 p-1 bg-yellow-400 text-white" />
+                          <RiDeleteBin6Line className="h-6 w-6 p-1 bg-green-700 text-white" />
+                          <FaEye className="h-6 w-6 p-1 bg-red-500 text-white" />
                         </div>
                       </td>
                     </tr>
-
                     <tr>
                       <td
                         scope="row"
@@ -101,53 +147,229 @@ const Products = () => {
                         scope="row"
                         className="py-4 px-6 font-medium whitespace-nowrap"
                       >
+                        Men Woven Shirt
+                      </td>
+                      <td
+                        scope="row"
+                        className="py-4 px-6 font-medium whitespace-nowrap"
+                      >
                         Sports
                       </td>
                       <td
                         scope="row"
                         className="py-4 px-6 font-medium whitespace-nowrap"
                       >
-                        <div className="flex justify-start items-center">
-                          <FiEdit />
-                          <RiDeleteBin6Line />
+                        Numero Uno
+                      </td>
+                      <td
+                        scope="row"
+                        className="py-4 px-6 font-medium whitespace-nowrap"
+                      >
+                        $100
+                      </td>
+                      <td
+                        scope="row"
+                        className="py-4 px-6 font-medium whitespace-nowrap"
+                      >
+                        20%
+                      </td>
+                      <td
+                        scope="row"
+                        className="py-4 px-6 font-medium whitespace-nowrap"
+                      >
+                        30
+                      </td>
+                      <td
+                        scope="row"
+                        className="py-4 px-4 font-medium whitespace-nowrap"
+                      >
+                        <div className="flex justify-between items-center p-1">
+                          <FiEdit className="h-6 w-6 p-1 bg-yellow-400 text-white" />
+                          <RiDeleteBin6Line className="h-6 w-6 p-1 bg-green-700 text-white" />
+                          <FaEye className="h-6 w-6 p-1 bg-red-500 text-white" />
                         </div>
                       </td>
                     </tr>
-
-                    {show ? (
-                      <tr className="w-full bg-[#ecebff]">
-                        <td
-                          scope="row"
-                          className="py-4 px-6 font-medium whitespace-nowrap"
-                        >
-                          34445
-                        </td>
-                        <td
-                          scope="row"
-                          className="py-4 px-6 font-medium whitespace-nowrap"
-                        >
-                          $100
-                        </td>
-                        <td
-                          scope="row"
-                          className="py-4 px-6 font-medium whitespace-nowrap"
-                        >
-                          Paid
-                        </td>
-                        <td
-                          scope="row"
-                          className="py-4 px-6 font-medium whitespace-nowrap"
-                        >
-                          Delivered
-                        </td>
-                        <td
-                          scope="row"
-                          className="py-4 px-6 font-medium whitespace-nowrap"
-                        >
-                          <span className="text-green-500">Active</span>
-                        </td>
-                      </tr>
-                    ) : null}
+                    <tr>
+                      <td
+                        scope="row"
+                        className="py-4 px-6 font-medium whitespace-nowrap"
+                      >
+                        3
+                      </td>
+                      <td
+                        scope="row"
+                        className="py-4 px-6 font-medium whitespace-nowrap"
+                      >
+                        $100
+                      </td>
+                      <td
+                        scope="row"
+                        className="py-4 px-6 font-medium whitespace-nowrap"
+                      >
+                        Men Woven Shirt
+                      </td>
+                      <td
+                        scope="row"
+                        className="py-4 px-6 font-medium whitespace-nowrap"
+                      >
+                        Sports
+                      </td>
+                      <td
+                        scope="row"
+                        className="py-4 px-6 font-medium whitespace-nowrap"
+                      >
+                        Numero Uno
+                      </td>
+                      <td
+                        scope="row"
+                        className="py-4 px-6 font-medium whitespace-nowrap"
+                      >
+                        $100
+                      </td>
+                      <td
+                        scope="row"
+                        className="py-4 px-6 font-medium whitespace-nowrap"
+                      >
+                        20%
+                      </td>
+                      <td
+                        scope="row"
+                        className="py-4 px-6 font-medium whitespace-nowrap"
+                      >
+                        30
+                      </td>
+                      <td
+                        scope="row"
+                        className="py-4 px-4 font-medium whitespace-nowrap"
+                      >
+                        <div className="flex justify-between items-center p-1">
+                          <FiEdit className="h-6 w-6 p-1 bg-yellow-400 text-white" />
+                          <RiDeleteBin6Line className="h-6 w-6 p-1 bg-green-700 text-white" />
+                          <FaEye className="h-6 w-6 p-1 bg-red-500 text-white" />
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        scope="row"
+                        className="py-4 px-6 font-medium whitespace-nowrap"
+                      >
+                        4
+                      </td>
+                      <td
+                        scope="row"
+                        className="py-4 px-6 font-medium whitespace-nowrap"
+                      >
+                        $100
+                      </td>
+                      <td
+                        scope="row"
+                        className="py-4 px-6 font-medium whitespace-nowrap"
+                      >
+                        Men Woven Shirt
+                      </td>
+                      <td
+                        scope="row"
+                        className="py-4 px-6 font-medium whitespace-nowrap"
+                      >
+                        Sports
+                      </td>
+                      <td
+                        scope="row"
+                        className="py-4 px-6 font-medium whitespace-nowrap"
+                      >
+                        Numero Uno
+                      </td>
+                      <td
+                        scope="row"
+                        className="py-4 px-6 font-medium whitespace-nowrap"
+                      >
+                        $100
+                      </td>
+                      <td
+                        scope="row"
+                        className="py-4 px-6 font-medium whitespace-nowrap"
+                      >
+                        20%
+                      </td>
+                      <td
+                        scope="row"
+                        className="py-4 px-6 font-medium whitespace-nowrap"
+                      >
+                        30
+                      </td>
+                      <td
+                        scope="row"
+                        className="py-4 px-4 font-medium whitespace-nowrap"
+                      >
+                        <div className="flex justify-between items-center p-1">
+                          <FiEdit className="h-6 w-6 p-1 bg-yellow-400 text-white" />
+                          <RiDeleteBin6Line className="h-6 w-6 p-1 bg-green-700 text-white" />
+                          <FaEye className="h-6 w-6 p-1 bg-red-500 text-white" />
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        scope="row"
+                        className="py-4 px-6 font-medium whitespace-nowrap"
+                      >
+                        5
+                      </td>
+                      <td
+                        scope="row"
+                        className="py-4 px-6 font-medium whitespace-nowrap"
+                      >
+                        $100
+                      </td>
+                      <td
+                        scope="row"
+                        className="py-4 px-6 font-medium whitespace-nowrap"
+                      >
+                        Men Woven Shirt
+                      </td>
+                      <td
+                        scope="row"
+                        className="py-4 px-6 font-medium whitespace-nowrap"
+                      >
+                        Sports
+                      </td>
+                      <td
+                        scope="row"
+                        className="py-4 px-6 font-medium whitespace-nowrap"
+                      >
+                        Numero Uno
+                      </td>
+                      <td
+                        scope="row"
+                        className="py-4 px-6 font-medium whitespace-nowrap"
+                      >
+                        $100
+                      </td>
+                      <td
+                        scope="row"
+                        className="py-4 px-6 font-medium whitespace-nowrap"
+                      >
+                        20%
+                      </td>
+                      <td
+                        scope="row"
+                        className="py-4 px-6 font-medium whitespace-nowrap"
+                      >
+                        30
+                      </td>
+                      <td
+                        scope="row"
+                        className="py-4 px-4 font-medium whitespace-nowrap"
+                      >
+                        <div className="flex justify-between items-center p-1">
+                          <FiEdit className="h-6 w-6 p-1 bg-yellow-400 text-white" />
+                          <RiDeleteBin6Line className="h-6 w-6 p-1 bg-green-700 text-white" />
+                          <FaEye className="h-6 w-6 p-1 bg-red-500 text-white" />
+                        </div>
+                      </td>
+                    </tr>
                   </tbody>
                 </table>
               </div>
