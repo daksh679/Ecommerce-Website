@@ -97,7 +97,7 @@ export const allNav = [
     title: "Discounted Products",
     role: "seller",
     icon: <MdDiscount />,
-    path: "/seller/dashboard/discouted-products",
+    path: "/seller/dashboard/discounted-products",
   },
   {
     id: 13,

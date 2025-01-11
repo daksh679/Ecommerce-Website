@@ -10,12 +10,12 @@ const Products = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [searchValue, setSearchValue] = useState("");
   const [perPage, setPerPage] = useState(5);
-  const [show, setShow] = useState(false);
 
   return (
-    <div className=" left-0 w-full py-5 px-2 lg:px-7 z-40">
+    <div className=" left-0 w-full py-4 px-2 lg:px-7 z-40">
       <div className="lg:ml-[260px] lg:w-[calc(100%-260px)]">
-        <div className="w-full flex flex-wrap mt-7">
+        <span className="text-lg font-bold">All Products</span>
+        <div className="w-full flex flex-wrap mt-5">
           <div className="w-full  lg:pr-3">
             <div className="w-full bg-[#f5f5f5] p-4 rounded-md">
               <div className="flex justify-between items-center mb-2">
