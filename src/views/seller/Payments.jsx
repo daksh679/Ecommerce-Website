@@ -1,6 +1,4 @@
 import React from "react";
-import { AiFillProduct } from "react-icons/ai";
-import { FaCartArrowDown, FaShoppingCart } from "react-icons/fa";
 import { MdCurrencyRupee } from "react-icons/md";
 
 const Payments = () => {
@@ -53,7 +51,17 @@ const Payments = () => {
             </div>
           </div>
         </div>
-        <div></div>
+        <div className="w-full grid sm:grid-cols-1 md:grid-cols-2 mt-3 gap-3">
+          <div className="flex justify-between items-center p-5 bg-[#f5f5f5] rounded-md">
+            <span className="font-normal text-xl">Send Request</span>
+            <div className="w-full flex flex-wrap">
+              <input type="number" name="" id="" />
+            </div>
+          </div>
+          <div className="flex justify-between items-center p-5 bg-[#f5f5f5] rounded-md">
+            <h3 className="font-normal text-xl">Success Withdrawl</h3>
+          </div>
+        </div>
       </div>
     </div>
   );
