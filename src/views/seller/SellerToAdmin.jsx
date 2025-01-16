@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 
 const SellerToAdmin = () => {
-
-  
   const isActive = true;
   const [show, setShow] = useState(true);
   return (
@@ -51,6 +49,7 @@ const SellerToAdmin = () => {
             </div>
           </div>
           {/* Right side */}
+
           {show && (
             <div className="w-full lg:w-9/12 lg:pr-3">
               <div>
