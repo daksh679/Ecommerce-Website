@@ -13,6 +13,7 @@ import {
 import { MdPeopleOutline } from "react-icons/md";
 import { FaCodePullRequest } from "react-icons/fa6";
 import { SiLivechat } from "react-icons/si";
+import { CgProfile } from "react-icons/cg";
 
 export const allNav = [
   {
@@ -126,5 +127,12 @@ export const allNav = [
     role: "seller",
     icon: <BiSupport />,
     path: "/seller/dashboard/chat-support",
+  },
+  {
+    id: 17,
+    title: "Profile",
+    role: "seller",
+    icon: <CgProfile />,
+    path: "/seller/dashboard/profile",
   },
 ];
