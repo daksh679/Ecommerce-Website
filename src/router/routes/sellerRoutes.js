@@ -5,6 +5,7 @@ import Orders from "../../views/seller/Orders";
 import Payments from "../../views/seller/Payments";
 import SellerToCustomer from "../../views/seller/SellerToCustomer";
 import SellerToAdmin from "../../views/seller/SellerToAdmin";
+import Profile from "../../views/seller/Profile";
 const Home = lazy(() => import("./../../views/Home"));
 const SellerDashboard = lazy(() =>
   import("./../../views/seller/SellerDashboard")
@@ -55,6 +56,11 @@ export const sellerRoutes = [
   {
     path: "/seller/dashboard/chat-support",
     element: <SellerToAdmin />,
+    ability: ["seller"],
+  },
+  {
+    path: "/seller/dashboard/profile",
+    element: <Profile />,
     ability: ["seller"],
   },
 ];
