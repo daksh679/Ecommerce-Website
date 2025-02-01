@@ -78,7 +78,7 @@ const Profile = () => {
             </div>
           </div>
 
-          <div className="bg-[#f5f5f5] rounded-md p-4">
+          <div className="bg-[#f5f5f5] rounded-md p-4 h-[350px]">
             <h2 className="font-bold text-xl py-2">Change Password</h2>
 
             <div className="py-1">
