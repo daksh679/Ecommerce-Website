@@ -6,6 +6,7 @@ import Payments from "../../views/seller/Payments";
 import SellerToCustomer from "../../views/seller/SellerToCustomer";
 import SellerToAdmin from "../../views/seller/SellerToAdmin";
 import Profile from "../../views/seller/Profile";
+import EditProduct from "../../views/seller/EditProduct";
 const Home = lazy(() => import("./../../views/Home"));
 const SellerDashboard = lazy(() =>
   import("./../../views/seller/SellerDashboard")
@@ -61,6 +62,11 @@ export const sellerRoutes = [
   {
     path: "/seller/dashboard/profile",
     element: <Profile />,
+    ability: ["seller"],
+  },
+  {
+    path: "/seller/dashboard/edit-product/:productId",
+    element: <EditProduct />,
     ability: ["seller"],
   },
 ];

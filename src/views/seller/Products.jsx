@@ -124,7 +124,9 @@ const Products = () => {
                         className="py-4 px-4 font-medium whitespace-nowrap"
                       >
                         <div className="flex justify-between items-center p-1">
-                          <FiEdit className="h-6 w-6 p-1 bg-yellow-400 text-white" />
+                          <Link to={`/seller/dashboard/edit-product/1`}>
+                            <FiEdit className="h-6 w-6 p-1 bg-yellow-400 text-white" />
+                          </Link>
                           <RiDeleteBin6Line className="h-6 w-6 p-1 bg-green-700 text-white" />
                           <FaEye className="h-6 w-6 p-1 bg-red-500 text-white" />
                         </div>
