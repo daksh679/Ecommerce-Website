@@ -1,6 +1,11 @@
 import React from "react";
+import { FaImage } from "react-icons/fa";
+import { FadeLoader } from "react-spinners";
 
 const Profile = () => {
+  const image = true;
+  const loader = true;
+
   return (
     <div className=" left-0 w-full py-5 px-2 lg:px-7 z-40">
       <div className="lg:ml-[260px] lg:w-[calc(100%-260px)]">
@@ -8,11 +13,36 @@ const Profile = () => {
           <div className="bg-[#f5f5f5] rounded-md">
             {/* Profile Image */}
             <div className="flex justify-center items-center">
-              <img
-                className="h-[500px] w-[500px] rounded-full "
-                src="http://localhost:3000/images/admin.jpg"
-                alt=""
-              />
+              {image ? (
+                <label
+                  className="h-[150] w-[200] relative p-3 cursor-pointer overflow-hidden"
+                  htmlFor="img"
+                >
+                  <img
+                    className="rounded-full "
+                    src="http://localhost:3000/images/admin.jpg"
+                    alt=""
+                  />
+                </label>
+              ) : (
+                <label
+                  className="flex justify-center items-center flex-col p-5 m-4 h-[150px] w-[200px] rounded-md cursor-pointer border border-dashed hover:border-red-500 border-[#667aa3]"
+                  htmlFor="img"
+                >
+                  <span>
+                    <FaImage />
+                  </span>
+                  <span>Select Image</span>
+                  {!loader && (
+                    <div className="bg-slate-600 absolute left-0 top-0 w-full h-full opacity-70 flex justify-center items-center z-20">
+                      <span>
+                        <FadeLoader />
+                      </span>
+                    </div>
+                  )}
+                </label>
+              )}
+              <input type="file" className="hidden" id="img" />
             </div>
 
             <div className="m-3 bg-gray-400 rounded-md p-2">
@@ -78,7 +108,7 @@ const Profile = () => {
             </div>
           </div>
 
-          <div className="bg-[#f5f5f5] rounded-md p-4 h-[35 0px]">
+          <div className="bg-[#f5f5f5] rounded-md p-4 h-[350px]">
             <h2 className="font-bold text-xl py-2">Change Password</h2>
 
             <div className="py-1">
