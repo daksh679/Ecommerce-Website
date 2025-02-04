@@ -103,14 +103,24 @@ const EditProduct = () => {
     setShowImage([...filterImagesURL]);
   };
 
-  useEffect(() => {}, [showImage]);
+  useEffect(() => {
+    setProduct({
+      name: "Iphone 12",
+      price: "1200",
+      brand: "Apple",
+      stock: "100",
+      discount: "10",
+      description: "This is a very good phone",
+    });
+    setCategory("Mobile");
+  }, [showImage]);
 
   return (
     <div className=" left-0 w-full py-5 px-2 lg:px-7 z-40">
       <div className="lg:ml-[260px] lg:w-[calc(100%-260px)]">
         <div className="w-full bg-[#f5f5f5] rounded-md p-4">
           <div className="flex justify-between items-center mb-3">
-            <h1 className="text-xl font-semibold">Add Product</h1>
+            <h1 className="text-xl font-semibold">Edit Product</h1>
             <Link className="bg-blue-400 text-white px-3 py-1 rounded-sm">
               All Products
             </Link>
