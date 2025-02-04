@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { use, useEffect, useState } from "react";
 import { IoMdImages } from "react-icons/io";
 import { IoCloseCircle } from "react-icons/io5";
 import { Link } from "react-router-dom";
@@ -102,6 +102,8 @@ const EditProduct = () => {
     setImages([...filterImages]);
     setShowImage([...filterImagesURL]);
   };
+
+  useEffect(() => {}, [showImage]);
 
   return (
     <div className=" left-0 w-full py-5 px-2 lg:px-7 z-40">
