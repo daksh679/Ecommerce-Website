@@ -270,7 +270,7 @@ const EditProduct = () => {
           </div>
           <div className="flex justify-start items-center">
             <button className="bg-red-500 text-white px-3 py-1 rounded-md">
-              Add Product
+              Save Changes
             </button>
           </div>
         </div>
