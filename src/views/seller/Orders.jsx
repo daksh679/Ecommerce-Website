@@ -1,13 +1,11 @@
 import React, { useState } from "react";
 import Pagination from "../Pagination";
-import { FiEdit } from "react-icons/fi";
-import { RiDeleteBin6Line } from "react-icons/ri";
 import { FaEye } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Orders = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const [searchValue, setSearchValue] = useState("");
+  // const [searchValue, setSearchValue] = useState("");
   const [perPage, setPerPage] = useState(5);
 
   return (
