@@ -58,38 +58,6 @@ const Orders = () => {
                   </thead>
                   <tbody>
                     <tr>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
-                        12546
-                      </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
-                        $100
-                      </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
-                        Pending
-                      </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
-                        Pending
-                      </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-4 font-medium whitespace-nowrap"
-                      >
-                        <FaEye className="h-6 w-6 p-1 bg-green-700 text-white" />
-                      </td>
-                    </tr>
-                    <tr>
                       <td className="py-4 px-6 font-medium whitespace-nowrap">
                         12546
                       </td>
@@ -103,7 +71,7 @@ const Orders = () => {
                         Pending
                       </td>
                       <td className="py-4 px-4 font-medium whitespace-nowrap">
-                        <Link to="/seller/order/12546">
+                        <Link to="/seller/dashboard/order/details/12546">
                           <FaEye className="h-6 w-6 p-1 bg-green-700 text-white" />
                         </Link>
                       </td>
@@ -122,7 +90,9 @@ const Orders = () => {
                         Pending
                       </td>
                       <td className="py-4 px-4 font-medium whitespace-nowrap">
-                        <FaEye className="h-6 w-6 p-1 bg-green-700 text-white" />
+                        <Link to="/seller/dashboard/order/details/12546">
+                          <FaEye className="h-6 w-6 p-1 bg-green-700 text-white" />
+                        </Link>
                       </td>
                     </tr>
                     <tr>
@@ -132,55 +102,54 @@ const Orders = () => {
                       <td className="py-4 px-6 font-medium whitespace-nowrap">
                         $100
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         Pending
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         Pending
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-4 font-medium whitespace-nowrap"
-                      >
-                        <FaEye className="h-6 w-6 p-1 bg-green-700 text-white" />
+                      <td className="py-4 px-4 font-medium whitespace-nowrap">
+                        <Link to="/seller/dashboard/order/details/12546">
+                          <FaEye className="h-6 w-6 p-1 bg-green-700 text-white" />
+                        </Link>
                       </td>
                     </tr>
                     <tr>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         12546
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         $100
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         Pending
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         Pending
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-4 font-medium whitespace-nowrap"
-                      >
-                        <FaEye className="h-6 w-6 p-1 bg-green-700 text-white" />
+                      <td className="py-4 px-4 font-medium whitespace-nowrap">
+                        <Link to="/seller/dashboard/order/details/12546">
+                          <FaEye className="h-6 w-6 p-1 bg-green-700 text-white" />
+                        </Link>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
+                        12546
+                      </td>
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
+                        $100
+                      </td>
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
+                        Pending
+                      </td>
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
+                        Pending
+                      </td>
+                      <td className="py-4 px-4 font-medium whitespace-nowrap">
+                        <Link to="/seller/dashboard/order/details/12546">
+                          <FaEye className="h-6 w-6 p-1 bg-green-700 text-white" />{" "}
+                        </Link>
                       </td>
                     </tr>
                   </tbody>
