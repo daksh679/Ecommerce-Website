@@ -90,82 +90,46 @@ const Orders = () => {
                       </td>
                     </tr>
                     <tr>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         12546
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         $100
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         Pending
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         Pending
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-4 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-4 font-medium whitespace-nowrap">
                         <Link to="/seller/order/12546">
                           <FaEye className="h-6 w-6 p-1 bg-green-700 text-white" />
                         </Link>
                       </td>
                     </tr>
                     <tr>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         12546
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         $100
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         Pending
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         Pending
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-4 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-4 font-medium whitespace-nowrap">
                         <FaEye className="h-6 w-6 p-1 bg-green-700 text-white" />
                       </td>
                     </tr>
                     <tr>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         12546
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         $100
                       </td>
                       <td
