@@ -3,6 +3,7 @@ import Pagination from "../Pagination";
 import { FiEdit } from "react-icons/fi";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { FaEye } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Orders = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -117,7 +118,9 @@ const Orders = () => {
                         scope="row"
                         className="py-4 px-4 font-medium whitespace-nowrap"
                       >
-                        <FaEye className="h-6 w-6 p-1 bg-green-700 text-white" />
+                        <Link to="/seller/order/12546">
+                          <FaEye className="h-6 w-6 p-1 bg-green-700 text-white" />
+                        </Link>
                       </td>
                     </tr>
                     <tr>
