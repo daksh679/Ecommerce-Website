@@ -17,11 +17,8 @@ const OrderDetails = () => {
               <div className="w-8/12">
                 <span className="p-2">#12345</span>
                 <h2 className="font-bold p-2">
-                  Deliver to: <span className="font-normal">Daksh Ahuja</span>
+                  Deliver to: <span className="font-normal">Warehouse</span>
                 </h2>
-                <span className="text-sm p-2">
-                  1A/261 NIT Faridabad, Haryana
-                </span>
                 <h2 className="font-bold p-2">
                   Payment Status: <span className="font-normal">Paid</span>
                 </h2>
@@ -75,26 +72,6 @@ const OrderDetails = () => {
                       Quantity : <span className="font-normal">2</span>
                     </h2>
                   </span>
-                </div>
-              </div>
-              <div className="w-full ">
-                <div className="w-full bg-slate-500 rounded-md p-4 lg:-mx-4 sm:m-2 text-white">
-                  <div className="mb-4">
-                    <span>Seller 1 Order : Pending </span>
-                    <img
-                      className="h-[70px] w-[70px] m-1 "
-                      src="http://localhost:3000/images/admin.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div className="mb-4">
-                    <span>Seller 2 Order : Pending </span>
-                    <img
-                      className="h-[70px] w-[70px] m-1 "
-                      src="http://localhost:3000/images/admin.jpg"
-                      alt=""
-                    />
-                  </div>
                 </div>
               </div>
             </div>
