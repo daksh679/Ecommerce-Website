@@ -19,12 +19,15 @@ const OrderDetails = () => {
                 <h2 className="font-bold p-2">
                   Deliver to: <span className="font-normal">Warehouse</span>
                 </h2>
+
                 <h2 className="font-bold p-2">
                   Payment Status: <span className="font-normal">Paid</span>
                 </h2>
+
                 <h2 className="font-bold p-2">
                   Amount: <span className="font-normal">$3445</span>
                 </h2>
+
                 <div className="w-full right-1 bg-slate-500 p-1 mb-2 rounded-md flex justify-start items-center">
                   <img
                     className="h-[70px] w-[70px] m-1 "
