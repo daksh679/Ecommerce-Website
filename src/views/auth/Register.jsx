@@ -4,9 +4,18 @@ import { FaGoogle } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { useSelector } from "react-redux";
+import { PropagateLoader } from "react-spinners";
 
 const Register = () => {
   const { loader } = useSelector((state) => state.auth);
+
+  const overrideStyle = {
+    display: "flex",
+    margin: "0 auto",
+    height: "20px",
+    justifyContent: "center",
+    alignItem: "center",
+  };
 
   const [state, setState] = useState({
     name: "",
@@ -82,6 +91,18 @@ const Register = () => {
                 I agree to the privacy policy & terms
               </label>
             </div>
+
+            <button
+              disabled={loader ? true : false}
+              className="bg-slate-800 w-full hover:shadow-lg hover:shadow-blue-300 text-white px-7 py-2 rounded-md mb-3"
+            >
+              {loader ? (
+                <PropagateLoader color="#fff" cssOverride={overrideStyle} />
+              ) : (
+                "Login"
+              )}
+            </button>
+
             <button className="bg-slate-800 w-full hover:shadow-lg hover:shadow-blue-300 text-white px-7 py-2 rounded-md mb-3">
               Sign Up
             </button>
