@@ -3,10 +3,12 @@ import { Link } from "react-router-dom";
 import { FaGoogle } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { PropagateLoader } from "react-spinners";
+import { seller_register } from "../../store/Reducers/AuthReducer";
 
 const Register = () => {
+  const dispatch = useDispatch();
   const { loader } = useSelector((state) => state.auth);
 
   const overrideStyle = {
@@ -29,7 +31,7 @@ const Register = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(state);
+    dispatch(seller_register(state));
   };
 
   return (
