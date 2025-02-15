@@ -3,8 +3,11 @@ import { Link } from "react-router-dom";
 import { FaGoogle } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import { useSelector } from "react-redux";
 
 const Register = () => {
+  const { loader } = useSelector((state) => state.auth);
+
   const [state, setState] = useState({
     name: "",
     email: "",
