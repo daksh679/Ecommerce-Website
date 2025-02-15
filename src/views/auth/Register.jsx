@@ -14,7 +14,7 @@ const Register = () => {
     margin: "0 auto",
     height: "20px",
     justifyContent: "center",
-    alignItem: "center",
+    alignItems: "center",
   };
 
   const [state, setState] = useState({
@@ -99,13 +99,10 @@ const Register = () => {
               {loader ? (
                 <PropagateLoader color="#fff" cssOverride={overrideStyle} />
               ) : (
-                "Login"
+                "Sign Up"
               )}
             </button>
 
-            <button className="bg-slate-800 w-full hover:shadow-lg hover:shadow-blue-300 text-white px-7 py-2 rounded-md mb-3">
-              Sign Up
-            </button>
             <div className="flex items-center mb-3 gap-3 justify-center">
               <p>
                 Already have an account?{" "}
