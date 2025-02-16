@@ -1,15 +1,21 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { use, useEffect, useState } from "react";
+import { Link, Navigate } from "react-router-dom";
 import { FaGoogle } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
 import { PropagateLoader } from "react-spinners";
-import { seller_register } from "../../store/Reducers/AuthReducer";
+import {
+  clearMessage,
+  seller_register,
+} from "../../store/Reducers/AuthReducer";
+import toast from "react-hot-toast";
 
 const Register = () => {
   const dispatch = useDispatch();
-  const { loader } = useSelector((state) => state.auth);
+  const { loader, successMessage, errorMessage } = useSelector(
+    (state) => state.auth
+  );
 
   const overrideStyle = {
     display: "flex",
@@ -33,6 +39,18 @@ const Register = () => {
     e.preventDefault();
     dispatch(seller_register(state));
   };
+
+  useEffect(() => {
+    if (errorMessage) {
+      toast.error(errorMessage);
+      dispatch(clearMessage());
+    }
+    if (successMessage) {
+      toast.success(successMessage);
+      dispatch(clearMessage());
+      Navigate("/");
+    }
+  }, [successMessage, errorMessage]);
 
   return (
     <div className="min-w-screen min-h-screen bg-[#cdcae9] flex justify-center items-center">
