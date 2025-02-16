@@ -40,6 +40,7 @@ const Login = () => {
                 required
               />
             </div>
+
             <div className="flex flex-col w-full gap-1 mb-3">
               <label htmlFor="password">Password</label>
               <input
