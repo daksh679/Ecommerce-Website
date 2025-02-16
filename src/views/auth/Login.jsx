@@ -26,6 +26,8 @@ const Login = () => {
           <p className="text-sm mb-3 font-medium">
             Please login to your account
           </p>
+
+          {/* login form */}
           <form onSubmit={handleSubmit}>
             <div className="flex flex-col w-full gap-1 mb-3">
               <label htmlFor="email">Email</label>
