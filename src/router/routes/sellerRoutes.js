@@ -1,13 +1,23 @@
 import { lazy } from "react";
-import Products from "../../views/seller/Products";
-import DiscountedProducts from "../../views/seller/DiscountedProducts";
-import Orders from "../../views/seller/Orders";
-import Payments from "../../views/seller/Payments";
-import SellerToCustomer from "../../views/seller/SellerToCustomer";
-import SellerToAdmin from "../../views/seller/SellerToAdmin";
-import Profile from "../../views/seller/Profile";
-import EditProduct from "../../views/seller/EditProduct";
-import OrderDetails from "../../views/seller/OrderDetails";
+const Products = lazy(() => import("./../../views/seller/Products"));
+const DiscountedProducts = lazy(() => import("./../../views/seller/DiscountedProducts"));
+const Orders = lazy(() => import("./../../views/seller/Orders"));
+import Payments = lazy(() => import("./../../views/seller/Payments"));
+import SellerToCustomer = lazy(() => import("./../../views/seller/SellerToCustomer"));
+import SellerToAdmin = lazy(() => import("./../../views/seller/SellerToAdmin"));
+import Profile = lazy(() => import("./../../views/seller/Profile"));
+import EditProduct = lazy(() => import("./../../views/seller/EditProduct"));
+import OrderDetails = lazy(() => import("./../../views/seller/OrderDetails"));
+
+// import Products from "../../views/seller/Products";
+// import DiscountedProducts from "../../views/seller/DiscountedProducts";
+// import Orders from "../../views/seller/Orders";
+// import Payments from "../../views/seller/Payments";
+// import SellerToCustomer from "../../views/seller/SellerToCustomer";
+// import SellerToAdmin from "../../views/seller/SellerToAdmin";
+// import Profile from "../../views/seller/Profile";
+// import EditProduct from "../../views/seller/EditProduct";
+// import OrderDetails from "../../views/seller/OrderDetails";
 const Home = lazy(() => import("./../../views/Home"));
 const SellerDashboard = lazy(() =>
   import("./../../views/seller/SellerDashboard")
