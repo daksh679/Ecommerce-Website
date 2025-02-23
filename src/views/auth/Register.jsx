@@ -48,7 +48,6 @@ const Register = () => {
     if (successMessage) {
       toast.success(successMessage);
       dispatch(clearMessage());
-      Navigate("/");
     }
   }, [successMessage, errorMessage]);
 
