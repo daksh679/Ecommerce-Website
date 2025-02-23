@@ -40,6 +40,7 @@ const Register = () => {
     dispatch(seller_register(state));
   };
 
+  // Register Status Message
   useEffect(() => {
     if (errorMessage) {
       toast.error(errorMessage);
@@ -60,6 +61,7 @@ const Register = () => {
             Please register your account
           </p>
           <form onSubmit={handleSubmit}>
+            {/* Name Input */}
             <div className="flex flex-col w-full gap-1 mb-3">
               <label htmlFor="name">Name</label>
               <input
@@ -73,6 +75,8 @@ const Register = () => {
                 required
               />
             </div>
+
+            {/* Email Input */}
             <div className="flex flex-col w-full gap-1 mb-3">
               <label htmlFor="email">Email</label>
               <input
@@ -86,6 +90,7 @@ const Register = () => {
                 required
               />
             </div>
+            {/* Password Input */}
             <div className="flex flex-col w-full gap-1 mb-3">
               <label htmlFor="password">Password</label>
               <input
