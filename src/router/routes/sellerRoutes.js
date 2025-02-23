@@ -12,16 +12,6 @@ const SellerToAdmin = lazy(() => import("./../../views/seller/SellerToAdmin"));
 const Profile = lazy(() => import("./../../views/seller/Profile"));
 const EditProduct = lazy(() => import("./../../views/seller/EditProduct"));
 const OrderDetails = lazy(() => import("./../../views/seller/OrderDetails"));
-
-// import Products from "../../views/seller/Products";
-// import DiscountedProducts from "../../views/seller/DiscountedProducts";
-// import Orders from "../../views/seller/Orders";
-// import Payments from "../../views/seller/Payments";
-// import SellerToCustomer from "../../views/seller/SellerToCustomer";
-// import SellerToAdmin from "../../views/seller/SellerToAdmin";
-// import Profile from "../../views/seller/Profile";
-// import EditProduct from "../../views/seller/EditProduct";
-// import OrderDetails from "../../views/seller/OrderDetails";
 const Home = lazy(() => import("./../../views/Home"));
 const SellerDashboard = lazy(() =>
   import("./../../views/seller/SellerDashboard")

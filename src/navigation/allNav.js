@@ -135,26 +135,4 @@ export const allNav = [
     icon: <CgProfile />,
     path: "/seller/dashboard/profile",
   },
-  //
-  {
-    id: 17,
-    title: "Profile",
-    role: "seller",
-    icon: <CgProfile />,
-    path: "/seller/dashboard/profile",
-  },
-  {
-    id: 17,
-    title: "Profile",
-    role: "seller",
-    icon: <CgProfile />,
-    path: "/seller/dashboard/profile",
-  },
-  {
-    id: 17,
-    title: "Profile",
-    role: "seller",
-    icon: <CgProfile />,
-    path: "/seller/dashboard/profile",
-  },
 ];
