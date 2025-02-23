@@ -104,6 +104,8 @@ const Register = () => {
                 required
               />
             </div>
+
+            {/* Terms and Conditions */}
             <div className="flex items-center w-full gap-3 mb-3">
               <input
                 className="w-4 h-4 text-blue-600 overflow-hidden bg-gray-200 border-gray-300 focus:ring-blue-500"
@@ -116,6 +118,7 @@ const Register = () => {
               </label>
             </div>
 
+            {/* Submit Button */}
             <button
               disabled={loader ? true : false}
               className="bg-slate-800 w-full hover:shadow-lg hover:shadow-blue-300 text-white px-7 py-2 rounded-md mb-3"
@@ -136,6 +139,7 @@ const Register = () => {
               </p>
             </div>
 
+            {/* External Login */}
             <div className="w-full flex justify-center items-center mb-3">
               <div className="w-[45%] bg-slate-700 h-[1px]"></div>
               <div className="w-[10%] flex justify-center items-center">
