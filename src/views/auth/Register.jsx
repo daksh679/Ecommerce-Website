@@ -149,16 +149,19 @@ const Register = () => {
             </div>
 
             <div className="flex justify-center items-center gap-3">
+              {/* Google */}
               <div className="w-[135px] h-[35px] flex rounded-md bg-orange-700 shadow-lg hover:shadow-orange-700/50 justify-center items-center cursor-pointer overflow-hidden">
                 <span>
                   <FaGoogle />
                 </span>
               </div>
+              {/* Facebook */}
               <div className="w-[135px] h-[35px] flex rounded-md bg-blue-700 shadow-lg hover:shadow-blue-700/50 justify-center items-center cursor-pointer overflow-hidden">
                 <span>
                   <FaFacebookF />
                 </span>
               </div>
+              {/* Instagram */}
               <div className="w-[135px] h-[35px] flex rounded-md bg-red-700 shadow-lg hover:shadow-red-700/50 justify-center items-center cursor-pointer overflow-hidden">
                 <span>
                   <FaInstagram />
