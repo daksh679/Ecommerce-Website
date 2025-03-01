@@ -26,6 +26,7 @@ const Sidebar = ({ showSidebar, setShowSidebar }) => {
           showSidebar ? "left-0" : "-left-[260px] lg:left-0"
         }`}
       >
+        {/* Avatar */}
         <div className="h-[70px] flex justify-center items-center">
           <Link to="/" className="w-[180px] h-[50px]">
             <img
@@ -35,6 +36,7 @@ const Sidebar = ({ showSidebar, setShowSidebar }) => {
             />
           </Link>
         </div>
+        {/* Sidebar Options */}
         <div className="px-[16px]">
           <ul>
             {allNav.map((n, i) => (
