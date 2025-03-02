@@ -1,10 +1,26 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FaGoogle } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import { PropagateLoader } from "react-spinners";
+import { useDispatch, useSelector } from "react-redux";
 
 const Login = () => {
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const { loader, successMessage, errorMessage } = useSelector(
+    (state) => state.auth
+  );
+
+  const overrideStyle = {
+    display: "flex",
+    margin: "0 auto",
+    height: "20px",
+    justifyContent: "center",
+    alignItems: "center",
+  };
+
   const [state, setState] = useState({
     email: "",
     password: "",
@@ -57,8 +73,15 @@ const Login = () => {
               />
             </div>
 
-            <button className="bg-slate-800 w-full hover:shadow-lg hover:shadow-blue-300 text-white px-7 py-2 rounded-md mb-3">
-              Login
+            <button
+              disabled={loader ? true : false}
+              className="bg-slate-800 w-full hover:shadow-lg hover:shadow-blue-300 text-white px-7 py-2 rounded-md mb-3"
+            >
+              {loader ? (
+                <PropagateLoader color="#fff" cssOverride={overrideStyle} />
+              ) : (
+                "Sign In"
+              )}
             </button>
             <div className="flex items-center mb-3 gap-3 justify-center">
               <p>
