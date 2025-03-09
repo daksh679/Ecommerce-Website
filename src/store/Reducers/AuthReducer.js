@@ -94,11 +94,18 @@ export const authReducer = createSlice({
         state.successMessage = payload.message;
       });
 
-
     builder
-    .addCase(seller_login.pending, (state, { payload }) => {
-      state.loader = true;
-    } 
+      .addCase(seller_login.pending, (state, { payload }) => {
+        state.loader = true;
+      })
+      .addCase(seller_register.rejected, (state, { payload }) => {
+        state.loader = false;
+        state.errorMessage = payload.error;
+      })
+      .addCase(seller_register.fulfilled, (state, { payload }) => {
+        state.loader = false;
+        state.successMessage = payload.message;
+      });
   },
 });
 
