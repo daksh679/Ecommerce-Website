@@ -40,6 +40,7 @@ const Login = () => {
     dispatch(seller_login(state));
   };
 
+  // Track the success and error messages and display them using toast
   useEffect(() => {
     if (errorMessage) {
       toast.error(errorMessage);
