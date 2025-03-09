@@ -18,6 +18,7 @@ export const admin_login = createAsyncThunk(
     }
   }
 );
+
 export const seller_register = createAsyncThunk(
   "auth/seller_register",
   async (info, { rejectWithValue, fulfillWithValue }) => {
