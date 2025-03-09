@@ -23,15 +23,18 @@ const Login = () => {
     alignItems: "center",
   };
 
+  // manage the state of the login form
   const [state, setState] = useState({
     email: "",
     password: "",
   });
 
+  // Handles the input field changes
   const handleInput = (e) => {
     setState({ ...state, [e.target.name]: e.target.value });
   };
 
+  // Submits the login form
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(seller_login(state));
