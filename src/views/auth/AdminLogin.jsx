@@ -50,7 +50,9 @@ const AdminLogin = () => {
     <div className="min-w-screen min-h-screen bg-[#cdcae9] flex justify-center items-center">
       <div className="w-[350px] text-[#ffffff] p-2">
         <div className="bg-[#6f68d1] p-4 rounded-md">
+          {/* Form Submit */}
           <form onSubmit={handleSubmit}>
+            {/* Email */}
             <div className="flex flex-col w-full gap-1 mb-3">
               <label htmlFor="email">Email</label>
               <input
