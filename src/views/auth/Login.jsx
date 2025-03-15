@@ -63,6 +63,7 @@ const Login = () => {
 
           {/* login form */}
           <form onSubmit={handleSubmit}>
+            {/* Email */}
             <div className="flex flex-col w-full gap-1 mb-3">
               <label htmlFor="email">Email</label>
               <input
@@ -76,7 +77,7 @@ const Login = () => {
                 required
               />
             </div>
-
+            {/* Password */}
             <div className="flex flex-col w-full gap-1 mb-3">
               <label htmlFor="password">Password</label>
               <input
@@ -90,7 +91,7 @@ const Login = () => {
                 required
               />
             </div>
-
+            {/* Sign In Button */}
             <button
               disabled={loader ? true : false}
               className="bg-slate-800 w-full hover:shadow-lg hover:shadow-blue-300 text-white px-7 py-2 rounded-md mb-3"
