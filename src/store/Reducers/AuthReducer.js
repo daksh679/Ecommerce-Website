@@ -70,13 +70,26 @@ export const get_user_Info = createAsyncThunk(
   }
 );
 
+const returnRole = (token) => {
+  if (token) {
+    console.log(token);
+    const payload = token.split(".")[1];
+    const decoded = atob(payload);
+    const role = JSON.parse(decoded).role;
+    return role;
+  } else {
+    return null;
+  }
+};
+
 export const authReducer = createSlice({
   name: "auth",
   initialState: {
     successMessage: "",
     errorMessage: "",
     loader: false,
-    userInfo: "",
+    userInfo: returnRole(localStorage.getItem("accessToken")) || "",
+    token: "",
   },
   reducers: {
     clearMessage: (state, _) => {
