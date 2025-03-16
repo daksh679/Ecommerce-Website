@@ -38,7 +38,7 @@ export const seller_register = createAsyncThunk(
 );
 
 export const seller_login = createAsyncThunk(
-  "auth/admin_login",
+  "auth/seller_login",
   async (info, { rejectWithValue, fulfillWithValue }) => {
     console.log(info);
     try {
@@ -95,9 +95,7 @@ export const authReducer = createSlice({
       .addCase(admin_login.fulfilled, (state, { payload }) => {
         state.loader = false;
         state.successMessage = payload.message;
-      });
-
-    builder
+      })
       .addCase(seller_register.pending, (state, { payload }) => {
         state.loader = true;
       })
@@ -108,31 +106,21 @@ export const authReducer = createSlice({
       .addCase(seller_register.fulfilled, (state, { payload }) => {
         state.loader = false;
         state.successMessage = payload.message;
-      });
-
-    builder
+      })
       .addCase(seller_login.pending, (state, { payload }) => {
         state.loader = true;
       })
-      .addCase(seller_register.rejected, (state, { payload }) => {
+      .addCase(seller_login.rejected, (state, { payload }) => {
         state.loader = false;
         state.errorMessage = payload.error;
       })
-      .addCase(seller_register.fulfilled, (state, { payload }) => {
+      .addCase(seller_login.fulfilled, (state, { payload }) => {
         state.loader = false;
         state.successMessage = payload.message;
       })
       .addCase(get_user_Info.fulfilled, (state, { payload }) => {
         state.loader = false;
         state.userInfo = payload.userInfo;
-      })
-      .addCase(seller_register.fulfilled, (state, { payload }) => {
-        state.loader = false;
-        state.successMessage = payload.message;
-      })
-      .addCase(seller_register.fulfilled, (state, { payload }) => {
-        state.loader = false;
-        state.successMessage = payload.message;
       });
   },
 });
