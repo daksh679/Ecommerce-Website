@@ -55,6 +55,21 @@ export const seller_login = createAsyncThunk(
   }
 );
 
+export const get_user_Info = createAsyncThunk(
+  "auth/get_User_Info",
+  async (_, { rejectWithValue, fulfillWithValue }) => {
+    try {
+      const { data } = await api.get("/get-info", {
+        withCredentials: true,
+      });
+      console.log(data);
+      return fulfillWithValue(data);
+    } catch (error) {
+      return rejectWithValue(error.response.data);
+    }
+  }
+);
+
 export const authReducer = createSlice({
   name: "auth",
   initialState: {
@@ -102,6 +117,18 @@ export const authReducer = createSlice({
       .addCase(seller_register.rejected, (state, { payload }) => {
         state.loader = false;
         state.errorMessage = payload.error;
+      })
+      .addCase(seller_register.fulfilled, (state, { payload }) => {
+        state.loader = false;
+        state.successMessage = payload.message;
+      })
+      .addCase(get_user_Info.fulfilled, (state, { payload }) => {
+        state.loader = false;
+        state.userInfo = payload.userInfo;
+      })
+      .addCase(seller_register.fulfilled, (state, { payload }) => {
+        state.loader = false;
+        state.successMessage = payload.message;
       })
       .addCase(seller_register.fulfilled, (state, { payload }) => {
         state.loader = false;
