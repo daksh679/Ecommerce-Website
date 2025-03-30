@@ -5,13 +5,11 @@ import { getRoutes } from "./router/routes/index";
 
 function App() {
   const [allRoutes, setAllRoutes] = useState([...publicRoutes]);
-  // console.log(allRoutes);
 
   useEffect(() => {
     const routes = getRoutes();
     setAllRoutes([...allRoutes, routes]);
   }, []);
-
   return <Router allRoutes={allRoutes} />;
 }
 
