@@ -1,9 +1,9 @@
 import React from "react";
 import { AiFillProduct } from "react-icons/ai";
-import { FaCartArrowDown, FaUser, FaUsers } from "react-icons/fa";
+import { FaCartArrowDown, FaUsers } from "react-icons/fa";
 import { MdCurrencyRupee } from "react-icons/md";
 import Chart from "react-apexcharts";
-import { data, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const AdminDashboard = () => {
   const state = {
