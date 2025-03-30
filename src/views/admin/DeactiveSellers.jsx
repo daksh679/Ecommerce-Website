@@ -159,34 +159,17 @@ const DeactiveSellers = () => {
                   </td>
                 </tr>
                 <tr>
-                  <td
-                    scope="row"
-                    className="py-4 px-6 font-medium whitespace-nowrap"
-                  >
-                    1
-                  </td>
-                  <td
-                    scope="row"
-                    className="py-4 px-6 font-medium whitespace-nowrap"
-                  >
+                  <td className="py-4 px-6 font-medium whitespace-nowrap">1</td>
+                  <td className="py-4 px-6 font-medium whitespace-nowrap">
                     $100
                   </td>
-                  <td
-                    scope="row"
-                    className="py-4 px-6 font-medium whitespace-nowrap"
-                  >
+                  <td className="py-4 px-6 font-medium whitespace-nowrap">
                     Daksh Ahuja
                   </td>
-                  <td
-                    scope="row"
-                    className="py-4 px-6 font-medium whitespace-nowrap"
-                  >
+                  <td className="py-4 px-6 font-medium whitespace-nowrap">
                     adaksh679@gmail.com
                   </td>
-                  <td
-                    scope="row"
-                    className="py-4 px-6 font-medium whitespace-nowrap"
-                  >
+                  <td className="py-4 px-6 font-medium whitespace-nowrap">
                     Pending
                   </td>
                   <td className="py-4 px-6 font-medium whitespace-nowrap">
