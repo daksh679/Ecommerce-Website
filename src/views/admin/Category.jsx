@@ -1,14 +1,11 @@
 import React, { useState } from "react";
 import Pagination from "../Pagination";
-import { Link } from "react-router-dom";
-import { IoIosCloudDownload } from "react-icons/io";
 import { FiEdit } from "react-icons/fi";
 import { RiDeleteBin6Line } from "react-icons/ri";
 // import Category from './Category';
 
 const Category = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const [searchValue, setSearchValue] = useState("");
   const [perPage, setPerPage] = useState(5);
   const [show, setShow] = useState(false);
 
