@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Pagination from "../Pagination";
-import { FaEye } from "react-icons/fa";
 
 const PaymentRequest = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -75,6 +74,8 @@ const PaymentRequest = () => {
               </tbody>
             </table>
           </div>
+
+          {/* Pagination */}
           <div className="w-full flex justify-end mt-4 bottom-4 right-4">
             <Pagination
               pageNumber={currentPage}
