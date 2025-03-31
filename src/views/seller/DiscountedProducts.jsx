@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import Pagination from "../Pagination";
-import { Link } from "react-router-dom";
-import { IoIosCloudDownload } from "react-icons/io";
 import { FiEdit } from "react-icons/fi";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { FaEye } from "react-icons/fa";
@@ -71,58 +69,31 @@ const DiscountedProducts = () => {
                   </thead>
                   <tbody>
                     <tr>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         1
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         $100
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         Men Woven Shirt
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         Sports
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         Numero Uno
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         $100
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         20%
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         30
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-4 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-4 font-medium whitespace-nowrap">
                         <div className="flex justify-between items-center p-1">
                           <FiEdit className="h-6 w-6 p-1 bg-yellow-400 text-white" />
                           <RiDeleteBin6Line className="h-6 w-6 p-1 bg-green-700 text-white" />
@@ -131,58 +102,31 @@ const DiscountedProducts = () => {
                       </td>
                     </tr>
                     <tr>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         2
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         $100
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         Men Woven Shirt
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         Sports
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         Numero Uno
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         $100
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         20%
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         30
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-4 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-4 font-medium whitespace-nowrap">
                         <div className="flex justify-between items-center p-1">
                           <FiEdit className="h-6 w-6 p-1 bg-yellow-400 text-white" />
                           <RiDeleteBin6Line className="h-6 w-6 p-1 bg-green-700 text-white" />
@@ -191,58 +135,31 @@ const DiscountedProducts = () => {
                       </td>
                     </tr>
                     <tr>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         3
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         $100
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         Men Woven Shirt
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         Sports
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         Numero Uno
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         $100
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         20%
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         30
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-4 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-4 font-medium whitespace-nowrap">
                         <div className="flex justify-between items-center p-1">
                           <FiEdit className="h-6 w-6 p-1 bg-yellow-400 text-white" />
                           <RiDeleteBin6Line className="h-6 w-6 p-1 bg-green-700 text-white" />
@@ -251,58 +168,31 @@ const DiscountedProducts = () => {
                       </td>
                     </tr>
                     <tr>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         4
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         $100
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         Men Woven Shirt
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         Sports
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         Numero Uno
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         $100
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         20%
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         30
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-4 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-4 font-medium whitespace-nowrap">
                         <div className="flex justify-between items-center p-1">
                           <FiEdit className="h-6 w-6 p-1 bg-yellow-400 text-white" />
                           <RiDeleteBin6Line className="h-6 w-6 p-1 bg-green-700 text-white" />
@@ -311,58 +201,31 @@ const DiscountedProducts = () => {
                       </td>
                     </tr>
                     <tr>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         5
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         $100
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         Men Woven Shirt
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         Sports
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         Numero Uno
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         $100
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         20%
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-6 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-6 font-medium whitespace-nowrap">
                         30
                       </td>
-                      <td
-                        scope="row"
-                        className="py-4 px-4 font-medium whitespace-nowrap"
-                      >
+                      <td className="py-4 px-4 font-medium whitespace-nowrap">
                         <div className="flex justify-between items-center p-1">
                           <FiEdit className="h-6 w-6 p-1 bg-yellow-400 text-white" />
                           <RiDeleteBin6Line className="h-6 w-6 p-1 bg-green-700 text-white" />
