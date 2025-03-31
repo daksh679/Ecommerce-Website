@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import Pagination from "../Pagination";
-import { Link } from "react-router-dom";
-import { IoIosCloudDownload } from "react-icons/io";
 import { FaEye } from "react-icons/fa";
 
 const Sellers = () => {
