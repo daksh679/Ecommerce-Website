@@ -26,7 +26,7 @@ const DiscountedProducts = () => {
                   <option value="20">20</option>
                   <option value="50">50</option>
                 </select>
-
+                {/* search bar */}
                 <input
                   className="px-3 py-2 outline-none bg-transparent border border-slate-700 rounded-md focus:border-indigo-300 overflow-hidden float-right"
                   type="text"
