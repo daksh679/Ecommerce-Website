@@ -12,6 +12,8 @@ const OrderDetails = () => {
               <option value="2">Completed</option>
             </select>
           </div>
+
+          {/* Sample Order Details */}
           <div className="p-2 flex">
             <div className="w-full grid grid-cols-1 sm:grid-cols-2">
               <div className="w-8/12">
