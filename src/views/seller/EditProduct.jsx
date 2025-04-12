@@ -137,6 +137,7 @@ const EditProduct = () => {
                 value={product.name}
               />
 
+              {/* Category Search and Input */}
               <div className="relative">
                 <label htmlFor="category">Category</label>
                 <input
