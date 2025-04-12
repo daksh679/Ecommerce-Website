@@ -125,7 +125,9 @@ const EditProduct = () => {
               All Products
             </Link>
           </div>
+
           <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-7">
+            {/* Product Input */}
             <div>
               <label htmlFor="">Product Name</label>
               <input
@@ -136,7 +138,6 @@ const EditProduct = () => {
                 name="name"
                 value={product.name}
               />
-
               {/* Category Search and Input */}
               <div className="relative">
                 <label htmlFor="category">Category</label>
@@ -186,6 +187,7 @@ const EditProduct = () => {
                 </div>
               </div>
 
+              {/* Price Input */}
               <label htmlFor="price">Price</label>
               <input
                 name="price"
